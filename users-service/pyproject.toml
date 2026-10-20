@@ -1,0 +1,20 @@
+[project]
+name = "users-service"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.20.0",
+    "fastapi[standard]>=0.152.0",
+    "psycopg>=3.3.6",
+    "psycopg[binary]>=3.3.6",
+    "sqlmodel>=0.0.48",
+]
+
+[project.scripts]
+users-service = "users_service:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
